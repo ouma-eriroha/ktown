@@ -1,0 +1,275 @@
+body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1.5fr 5fr 1.5fr;
+}
+
+.right {
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+}
+
+.left {
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+
+/*navbar*/
+
+.navbar {
+    height: 50px;
+    width: 100%;
+    background: linear-gradient(90deg, #e6e8eb 0%, #353638 100%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    z-index: 9999;
+}
+
+.title {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    background: var(--first-grad);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(165, 159, 159, 0.2);
+    cursor: pointer;
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/*navbar*/
+
+
+/*content-titles*/
+
+.content-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-titles {
+    width: 860px;
+    margin: 20px 0;
+}
+
+.content-titles ul {
+    list-style: none;
+    margin-top: 2%;
+}
+
+.content-titles ul li {
+    background: linear-gradient(90deg, #434244 0%, #d0d2d8 100%);
+    cursor: pointer;
+    width: 170px;
+    border: 1px solid #fff;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    float: left;
+    color: #fff;
+    font-size: 0.8rem;
+    position: relative;
+    font-family: poppins;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.content-titles ul li:hover {
+    background: rgb(206, 213, 218);
+    cursor: pointer;
+    color: black;
+}
+
+.content-titles ul ul {
+    display: none;
+}
+
+.content-titles ul li:hover>ul {
+    display: block;
+}
+
+.content-titles ul ul ul {
+    margin-left: 170px;
+    top: 0;
+    position: absolute;
+}
+
+.boy-groups{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px groove black;
+    border-radius: 30%;
+    background: linear-gradient(90deg, #e6e8eb 0%, #353638 100%);;
+}
+.kpop{
+    background-color: rgb(142, 185, 223);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+}
+.card-text{
+margin: 20px;
+}
+.card-text a{
+font-size: 2rem;
+    color: black;
+}
+
+#carousel1 {
+    background-color: aqua;
+    overflow: hidden;
+    margin: 2px;
+    padding: 10PX;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#carousel2 {
+    background-color: blueviolet;
+    overflow: hidden;
+    margin: 2px;
+    padding: 10PX;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.girl-groups{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px groove black;
+    border-radius: 30%;
+    background: linear-gradient(90deg, #e6e8eb 0%, #353638 100%);;
+    
+}
+.girl-groups h2{
+    margin: 5px;
+    
+}
+.boy-groups h2{
+    margin: 5px;
+    
+}
+
+
+.navigation {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation div {
+    cursor: pointer;
+    border: solid black;
+    border-radius: 100px;
+    background: transparent;
+    margin: 5px 10px;
+    font-size: 2.5rem;
+}
+
+
+.slides1 {
+    margin: 10px;
+}
+
+
+.slide1 {
+    display: none;
+    margin: 0;
+}
+.slides2 {
+    margin: 10px;
+}
+
+
+.slide2 {
+    display: none;
+    margin: 0;
+}
+.active {
+    display: flex;
+    justify-content: center;
+}
