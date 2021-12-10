@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=" ./ktown.css ">
+    <link rel="stylesheet" href=" ./media.css ">
+    <title>Welcome to KTOWN</title>
+</head>
+
+<body>
+    <div class="right">
+
+    </div>
+    <div class="page-container ">
+
+        <div class="navbar ">
+            <div class="log">
+                <img class="logoo" src="./KTOWN PNG.png " width="40px " style="color: white; ">
+            </div>
+            <h3 class="title ">
+                K TOWN
+            </h3>
+            <div class="dropdown ">
+                <button class="dropbtn ">Language :
+                    <i class="fa fa-caret-down "></i>
+                </button>
+                <div class="dropdown-content ">
+                    <a>English</a>
+                    <a>French</a>
+                    <a>Arabic</a>
+                </div>
+            </div>
+        </div>
+        <div class="content-titles ">
+            <ul class="content-list ">
+                <li>K-Pop
+
+                </li>
+                <li>K-Drama
+
+                </li>
+                <li>K-Movies
+
+                </li>
+                <li>K-Show
+
+                </li>
+
+            </ul>
+        </div>
+        <div class="carousel">
+            <div class="slides ">
+
+                <div class="slide active ">
+                    <img class="AA" src="./midnight.jpg " width="800px " height="400px ">
+                </div>
+                <div class=" slide ">
+                    <img src="./running man lead.jpeg " width="800px " height="400px ">
+                </div>
+                <div class="slide ">
+                    <img src="./kai peaches.jpg " width="800px " height="400px ">
+                </div>
+                <div class="slide ">
+                    <img src="./squid game poster.jpg " width="800px " height="400px ">
+                </div>
+
+            </div>
+
+        </div>
+        <div class="small-text ">
+            <P>K-TOWN is your space to access to all content related to the korean entertainment industry . It's as mentioned your small town where you can enjoy watching and learning about Kpop , Kmovies , Kdramas and even KShows.</P>
+        </div>
+        <div class="search ">
+            <div>
+                <input placeholder="Search " class="search-input " />
+            </div>
+            <div>
+                <button type="submit " class="search-submit ">Search</button>
+            </div>
+        </div>
+        <hr class="hrfooter ">
+        <div class="footer ">
+            <div class="sns ">
+                <a class="link " href="https://www.instagram.com/saadi.ouma/ " target="_blank "><i class="fab fa-instagram "></i>
+                    Instagram </a>
+                <a class="link " href="https://www.facebook.com/oumaima.saadi.37/ " target="_blank "><i class="fab fa-facebook "></i>
+                    Facebook </a>
+                <a class="link " href="https://twitter.com/Oums_saadi " target="_blank "><i class="fab fa-twitter "></i> Twitter </a>
+
+                <p>Made by : Oumaima Saadi</p>
+
+            </div>
+            <div class="logo ">
+                <img src="./KTOWN PNG.png " width="80px ">
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="left ">
+
+    </div>
+</body>
+<script>
+    let slides = document.querySelectorAll(".slide ")
+    let index = 0
+    setInterval(changeSlides, 3000)
+
+    function changeSlides() {
+        slides[index % 4].classList.remove("active ")
+        index++
+        slides[(index % 4)].classList.add("active ")
+
+    }
+</script>
+
+</html>
+<script src="https://kit.fontawesome.com/2866809aae.js " crossorigin="anonymous "></script>

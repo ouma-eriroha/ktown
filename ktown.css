@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,300;1,400&display=swap');
+body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+}
+
+.right {
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+}
+
+.left {
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*navbar*/
+
+.navbar {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+    z-index: 9999;
+}
+
+.title {
+    text-shadow: 2px 3px gray;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 800r;
+    color: white;
+    animation: slide_up 1.5s ease forwards;
+}
+
+@keyframes slide_up {
+    0% {
+        font-size: 1.5rem;
+    }
+    50% {
+        font-weight: bolder;
+        font-size: 3rem;
+        color: black;
+    }
+    100% {
+        font-size: 2.9rem;
+        color: black;
+    }
+}
+
+@keyframes slide_up1 {
+    0% {
+        font-size: 1.5rem;
+    }
+    50% {
+        font-weight: bolder;
+        font-size: 1.8rem;
+        color: black;
+    }
+    100% {
+        font-size: 1.5rem;
+        color: black;
+    }
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    font-size: 1.6rem;
+    animation: slide_up1 1.5s ease forwards;
+    color: black;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    background: rgb(192, 192, 192);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(165, 159, 159, 0.2);
+    cursor: pointer;
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/*navbar*/
+
+
+/*content-titles*/
+
+.content-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-titles {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    margin: 20px;
+}
+
+.content-titles ul {
+    list-style: none;
+    margin: 2%;
+}
+
+.content-titles ul li {
+    cursor: pointer;
+    width: 170px;
+    border: none;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    float: left;
+    color: rgb(255, 255, 255);
+    font-size: 0.8rem;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 1.5px;
+}
+
+.content-titles ul li:hover {
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    text-decoration: wavy;
+    font-size: 1.1rem;
+}
+
+
+/*content-titles*/
+
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slides {
+    margin: 50px;
+}
+
+.slide {
+    display: none;
+    text-align: center;
+}
+
+.active {
+    display: block;
+}
+
+.small-text {
+    font-weight: 600;
+    font-family: Lucida Sans Unicode;
+    margin: 0 200px;
+    text-align: center;
+    width: 100%;
+}
+
+.search {
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.search-input {
+    font-size: 1.5rem;
+}
+
+.search-submit {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hrfooter {
+    height: 5px;
+    border: none;
+    background: linear-gradient(90deg, #e6e8eb 0%, #353638 100%);
+    ;
+    width: 100%;
+}
+
+.sns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 50px;
+}
+
+.sns a {
+    font-size: 1.2rem;
+    margin: 5px;
+    text-align: left;
+    color: black;
+}
+
+.logo {
+    font-size: 1.2rem;
+    margin: 50px;
+}
